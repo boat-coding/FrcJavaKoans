@@ -28,7 +28,7 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void sayHelloInConsole() {
-
+System.out.println("Hello!");
     }
 
     /**
@@ -55,7 +55,7 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void computeTwoAndTwo() {
-
+System.out.println(2+2);
     }
 
     /**
@@ -97,7 +97,8 @@ public class AboutConsoleAndVariables {
      * 4
      */
     public static void createAndDisplayAVariable() {
-
+int num=4;
+System.out.println(num);
     }
 
     /**
@@ -117,7 +118,8 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void createAndDisplayAStringVariable() {
-
+String word = "Hello!";
+System.out.println(word);
     }
 
 
@@ -152,7 +154,10 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameInConsole() {
-
+System.out.println("What is your name?");
+String name=readLine();
+System.out.println("Your name is:");
+System.out.println(name);
     }
 
     /**
@@ -198,7 +203,9 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameOnASingleLineInConsole() {
-
+System.out.println("What is your name?");
+String name = readLine();
+System.out.println("Your name is: "+name);
     }
 
     /**
@@ -226,7 +233,11 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askNameAndAgeInConsole() {
-
+System.out.println("What is your name?");
+String name = readLine();
+System.out.println("What is your age?");
+String age=readLine();
+System.out.println("Your name is "+name+" and your age is "+age+".");
     }
 
     
@@ -263,7 +274,11 @@ public class AboutConsoleAndVariables {
      * In 5 years from now, you will be [The age entered above + 5 years].
      * 
      */
-    public static void computeAgeIn5YearsConsole() {
-
+    public static void computeAgeIn5YearsConsole()
+    {
+        System.out.println("What is your age?");
+        String age=readLine();
+        int ageNum = Integer.parseInt(age)+5;
+        System.out.println("In 5 years from now, you will be "+ageNum+".");
     }
 }
