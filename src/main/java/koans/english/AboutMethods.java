@@ -1,4 +1,4 @@
-dpackage koans.english;
+package koans.english;
 
 import static engine.Helpers.readLine;
 
@@ -26,7 +26,18 @@ public class AboutMethods {
      * 
      */
     public static void computeAgeIn5And10And20YearsConsole() {
-
+System.out.println("What is your age?");
+String age = readLine();
+int ageNum = Integer.parseInt(age);
+System.out.println("In 5 years from now, you will be "+(ageNum+5)+".");
+System.out.println("What is your age?");
+age = readLine();
+ageNum = Integer.parseInt(age);
+System.out.println("In 10 years from now, you will be "+(ageNum+10)+".");
+System.out.println("What is your age?");
+age = readLine();
+ageNum = Integer.parseInt(age);
+System.out.println("In 20 years from now, you will be "+(ageNum+20)+".");
     }
 
     /**
